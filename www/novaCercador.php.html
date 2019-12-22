@@ -1,0 +1,226 @@
+    <!DOCTYPE HTML>
+    <!--
+            Alpha by HTML5 UP
+            html5up.net | @ajlkn
+            Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    -->
+    <html>
+        <head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129016819-1"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+
+                gtag('config', 'UA-129016819-1');
+            </script>
+
+            <title>Consum Estratègic</title>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+            <link rel="stylesheet" href="../assets/css/main.css" />
+            <link rel="stylesheet" href="../assets/css/modal.css" />
+            <link rel="stylesheet" href="../assets/css/energia.css" />
+            <link rel="stylesheet" href="../assets/css/cookies.css" />
+            <link rel="stylesheet" href="../assets/css/agenda.css" />
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+
+            <!--FAvicon-->
+            <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+            <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+            <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+            <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+            <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+            <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+            <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+            <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+            <link rel="manifest" href="../favicon/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+            <meta name="theme-color" content="#ffffff">
+            <!-- end Favicon -->
+            <script type="text/javascript" src="../libs/ckeditor/ckeditor.js"></script>
+            <script type="text/javascript" src="../libs/ckfinder/ckfinder.js"></script>
+            <script type="text/javascript" src="../assets/js/ckscript.js"></script>
+            <script type="text/javascript" src="../assets/js/hidecb.js"></script>
+            <script type="text/javascript" src="../assets/js/modal.js"></script>
+            <!-- SCRIPT CONTROL DE COOKIES -->
+            <script type="text/javascript">
+                function controlcookies() {
+                    // si variable no existe se crea (al clicar en Aceptar)
+                    localStorage.controlcookie = (localStorage.controlcookie || 0);
+                    localStorage.controlcookie++; // incrementamos cuenta de la cookie
+                    cookie1.style.display = 'none'; // Esconde la política de cookie
+                }
+            </script>
+        </head>
+
+                <div id="page-wrapper">
+
+            <!-- Header -->
+            <!--<header id="header" class="alt">-->
+            <header id="header" class="alt">
+                <h1><a href="https://assemblea.cat"><img src="../images/logoANC_1.png" width="50%" /></a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Inici</a></li>
+
+                        <li><a href="consum.php.html">Consum Estratègic?</a></li>
+                        <li><a href="preAltaServei.php.html">Oferir Serveis</a></li>
+                        <li><a href="novaCercador.php.html">Cercar Serveis</a></li>
+                        <li><a href="altaConsumidor.php.html">Soc Consumidor</a></li>
+
+                        <li><a href="../cms/veureNoticies.php.html">Notícies</a></li>
+                        <li><a href="../estudis/veureEstudis.php.html">Estudis</a></li>
+                        <li><a href="../agenda.html">Agenda</a></li>
+                        <!--<li><a href="https://consumestrategic.cat/www/altres.php">Altres iniciatives</a></li>-->
+                        <!-- <li><a href="#">Blog</a></li> -->
+                    </ul>
+                </nav>
+            </header>
+
+                    <section id="main" class="container.large" style="margin-left: 10px; margin-right: 10px">
+            <header >
+                <h2 style="color: #fff; font-weight: bold; text-align: center"><img src="../images/bombetaBlanca.png" width="8%">Cercador de serveis</h2>
+            </header>
+            <ul class="actions">
+                <li style="padding-left: 25px"><a href="novaCercador.php.html" class="button special icon fa-search">Nova cerca</a>
+            </ul>
+            <form action="novaCercador.php.html" method="POST">
+                <input type="hidden" name="buscat" value="SI" />
+                <div class="row">
+
+                    <!--Denominació-->
+                    <div class="col-3 col-12-narrower">
+                        <section class="box special" style="text-align: justify">
+                            
+                            <p style="color: #2E8E87; font-weight: bold; margin-bottom: 5px">Denominació social</p>
+                            <input style="text-align: center; font-weight: bold"type="text" name="c_den" placeholder=""
+                                   >
+                            <p style="color: #2E8E87; font-weight: bold; margin-top: 10px; margin-bottom: 5px">Codi postal</p>
+                            <input style="text-align: center; font-weight: bold"type="text" name="c_cpo" placeholder="" required=""
+                                    >
+                            <!--
+                                <p style="color: #2E8E87; font-weight: bold; margin-top: 10px; margin-bottom: -5px">Denominació social</p>
+                                <input style="text-align: center; font-weight: bold"type="text" name="c_den" placeholder="">
+                            -->
+                            <p style="color: #2E8E87; font-weight: bold; margin-top: 10px; margin-bottom: 5px">Àmbit</p>
+                                                            <input type="checkbox" id="Electricitat" name="electricitat" value="1"
+                                       >
+                                <label for="Electricitat">Electricitat</label>
+                                <br />
+                                                                <input type="checkbox" id="Gas" name="gas" value="1"
+                                       >
+                                <label for="Gas">Gas</label>
+                                <br />
+                                                                <input type="checkbox" id="Telefonia" name="telefonia" value="1"
+                                       >
+                                <label for="Telefonia">Telefonia</label>
+                                <br />
+                                                                <input type="checkbox" id="Carburants" name="petroli" value="1"
+                                       >
+                                <label for="Carburants">Carburants</label>
+                                <br />
+                                                                <input type="checkbox" id="Entitat financera" name="banc" value="1"
+                                       >
+                                <label for="Entitat financera">Entitat financera</label>
+                                <br />
+                                                                <input type="checkbox" id="Assegurances" name="assegurances" value="1"
+                                       >
+                                <label for="Assegurances">Assegurances</label>
+                                <br />
+                                                                <input type="checkbox" id="Grans superfícies" name="granssuperficies" value="1"
+                                       >
+                                <label for="Grans superfícies">Grans superfícies</label>
+                                <br />
+                                                                <input type="checkbox" id="Representació sindical" name="sindicat" value="1"
+                                       >
+                                <label for="Representació sindical">Representació sindical</label>
+                                <br />
+                                                                <input type="checkbox" id="Representació patronal" name="patronal" value="1"
+                                       >
+                                <label for="Representació patronal">Representació patronal</label>
+                                <br />
+                                                                <label for="altres">Altres àmbits</label>
+                                <input type="text" id="altres" name="altres" placeholder="" 
+                                    >
+                            <br />
+                            <p style="color: #2E8E87; font-weight: bold; margin-top: 10px; margin-bottom: 5px">Altres</p>
+
+                            <input id="c_coo" type="checkbox" name="c_coo" value="1"  >
+                            <label for="c_coo" style="text-align: left">És una cooperativa?</label><br>
+                            <input id="c_iso" type="checkbox" name="c_iso" value="1" >
+                            <label for="c_iso" style="text-align: left">Disposa de certificació ISO 14000?</label><br>
+                            <input id="c_rep" type="checkbox" name="c_rep" value="1" >
+                            <label for="c_rep" style="text-align: left">Responsabilitat social?</label><br>
+                            <input id="c_amb" type="checkbox" name="c_amb" value="1" >
+                            <label for="c_amb" style="text-align: left">Respecta el medi ambient?</label><br>
+                            <input id="c_cir" type="checkbox" name="c_cir" value="1" >
+                            <label for="c_cir" style="text-align: left">Economia circular?</label><br>
+                            <input id="c_ind" type="checkbox" name="c_ind" value="1" >
+                            <label for="c_ind" style="text-align: left">Indústria 4.0?</label><br>
+                            <input id="c_wcat" type="checkbox" name="c_wcat" value="1" >
+                            <label for="c_wcat" style="text-align: left">Web en català?</label><br>
+                            <input id="c_cat" type="checkbox" name="c_cat" value="1" >
+                            <label for="c_cat" style="text-align: left">Atenció al client també en català?</label><br>
+                            <ul class="actions special">
+                                <li><input type="submit" value="Cercar" /></li>
+                            </ul>
+                        </section>
+                    </div>
+                                            <div class="col-9 col-12-narrower">
+                            <section class="box special" style="text-align: justify">
+                                <h2>Introdueix algun filtre i fes clic a 'Cercar'<br>Recorda que el cercador només admet els codis postals de Catalunya</h2>
+                            </section>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+                <!-- Footer -->
+        <footer id="footer">
+            <ul class="icons">
+                <li><a href="https://twitter.com/EinesPaisConsum" target="_blank" class="icon fa-twitter" style="color: #2e8e87"><span class="label">Twitter</span></a></li>
+                <!--<li><a href="#" class="icon fa-facebook" style="color: #2e8e87"><span class="label">Facebook</span></a></li>-->
+
+            </ul>
+            <ul class="copyright">
+                <li>&copy; <a href="https://assemblea.cat">Assemblea Nacional Catalana</a></li>
+                <li><a href="textlegal.php.html">Avís Legal</a></li>
+                <li><a href="privacitat.php.html">Política de privacitat</a></li>
+                <li><a href="cookies.php.html">Política de Cookies</a></li>
+                <li>Contacte: <a href="mailto: info@consumestrategic.cat">info@consumestrategic.cat</a><li>
+            </ul>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/jquery.dropotron.min.js"></script>
+    <script src="../assets/js/jquery.scrollex.min.js"></script>
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/util.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script type="text/javascript">
+                $(document).ready(function () {
+                    $(".btn").click(function () {
+                        $("#myModal").modal('show');
+                    });
+                });
+    </script>
+
+    </body>
+    </html>
+    
